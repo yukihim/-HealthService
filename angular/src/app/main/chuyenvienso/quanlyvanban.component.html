@@ -1,0 +1,335 @@
+<div [@routerTransition]>
+    <!-- <div class="container">
+        <h3>{{"All Documents" | localize}} ({{getDocumentCount()}})</h3>
+        <div class="search-container input-group">
+            <input class="form-control col-lg-4 col-md-6 col-sm-12" type="text" name="filter" [(ngModel)]="filter" autocomplete="off" placeholder="Search documents...">
+            <button class="btn btn-primary ml-2" (click)="toggleAdvancedSearch()"><i class="fas fa-cogs"></i> Advanced Search </button>
+            <div class="input-group-append" *ngIf="!showAdvancedSearch">
+                <button class="btn btn-primary" (click)="getSearch()"><i class="fas fa-search"></i> Search</button>
+            </div>
+        </div>
+        <div class="advanced-search mt-3" *ngIf="showAdvancedSearch">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <input class="form-control" type="text" name="validDate" [(ngModel)]="validDate" bsDatepicker placeholder="Validate Date">
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <input class="form-control" type="text" name="expireDate" [(ngModel)]="expireDate" bsDatepicker placeholder="Expire Date">
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <button class="btn btn-primary" (click)="getSearch()"><i class="fas fa-search"></i> Search</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row mt-3">
+            <div class="col">
+                <div class="form-control">
+                    <hr>
+                    <p-table
+                    [showCurrentPageReport]="true"
+                    [paginator]="true"
+                    [value]="data"
+                    [rowHover]="true"
+                    [rows]="2"
+                    [rowsPerPageOptions]="[2, 5, 10]"
+                    class="p-datatable-striped table table-striped">
+                        <ng-template pTemplate="header">
+                            <tr>
+                                <th pSortableColumn="title">Title<p-sortIcon></p-sortIcon></th>
+                                <th pSortableColumn="docID">Code<p-sortIcon></p-sortIcon></th>
+                                <th pSortableColumn="type">Document Type<p-sortIcon></p-sortIcon></th>
+                                <th pSortableColumn="validated">Validated<p-sortIcon></p-sortIcon></th>
+                                <th pSortableColumn="expired">Expired<p-sortIcon></p-sortIcon></th>
+                            </tr>
+                        </ng-template>
+    
+                        <ng-template pTemplate="body" let-document>
+                            <tr>
+                                <td>{{ document.title }}</td>
+                                <td>{{ document.code }}</td>
+                                <td>{{ document.docType }}</td>
+                                <td>{{ document.validation }}</td>
+                                <td>{{ document.expiration }}</td>
+                            </tr>
+                        </ng-template>
+                    </p-table>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    
+        <!-- <div class="search-container input-group">
+            <input class="form-control col-lg-4 col-md-6 col-sm-12" type="text" name="filter" [(ngModel)]="filter" autocomplete="off" placeholder="Search documents...">
+            <button class="btn btn-primary" (click)="getSearch()"><i class="fas fa-search"></i> Search</button>
+        </div>
+        <div class="advanced-search mt-3">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <input class="form-control" type="type=text" name="validDate" [(ngModel)]="validDate" bsDatepicker placeholder="Validate Date">
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <input class="form-control" type="type=text" name="expireDate" [(ngModel)]="expireDate" bsDatepicker placeholder="Expire Date">
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <button class="btn btn-primary" (click)="getSearch()"><i class="fas fa-search"></i> Search</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row mt-3">
+            <div class="col">
+                <div class="form-control">
+                    <hr>
+                    <p-table
+                    [showCurrentPageReport]="true"
+                    [paginator]="true"
+                    [value]="data"
+                    [rowHover]="true"
+                    [rows]="2"
+                    [rowsPerPageOptions]="[2, 5, 10]"
+                    class="p-datatable-striped table table-striped">
+                        <ng-template pTemplate="header">
+                            <tr>
+                                <th>
+                                    <p-columnFilter field="status" matchMode="equals" [showMenu]="false">
+                                        <ng-template pTemplate="filter" let-value let-filter="filterCallback">
+                                            <p-dropdown [options]="statuses" (onChange)="filter($event.value)" placeholder="Any" [showClear]="true">
+                                                <ng-template let-option pTemplate="item">
+                                                    <p-tag [value]="option.value"></p-tag>
+                                                </ng-template>
+                                            </p-dropdown>
+                                        </ng-template>
+                                    </p-columnFilter>
+                                </th>
+                            </tr>
+
+                            <tr>
+                                <th pSortableColumn="title">Title<p-sortIcon></p-sortIcon></th>
+                                <th pSortableColumn="docID">Code<p-sortIcon></p-sortIcon></th>
+                                <th pSortableColumn="type">Description<p-sortIcon></p-sortIcon></th>
+                                <th pSortableColumn="validated">Validated<p-sortIcon></p-sortIcon></th>
+                                <th pSortableColumn="expired">Expired<p-sortIcon></p-sortIcon></th>
+                            </tr>
+                        </ng-template>
+    
+                        <ng-template pTemplate="body" let-document>
+                            <tr>
+                                <td>{{ document.title }}</td>
+                                <td>{{ document.code }}</td>
+                                <td>{{ document.docType }}</td>
+                                <td>{{ document.validation }}</td>
+                                <td>{{ document.expiration }}</td>
+                            </tr>
+                        </ng-template>
+                        
+                    </p-table>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+<div class="container">
+<h3>{{"Quản lý văn bản" | localize}} ({{getDocumentCount()}})</h3>
+            <!-- Bảng dữ liệu -->
+            <div class="row mt-3">
+                <div class="col">
+                    <div class="form-control">
+                        <tabset>
+                            <tab class="p-5" heading=" {{ 'Đã phê duyệt' | localize }}">
+                                <p-table
+                                    [value]="data"
+                                    [showCurrentPageReport]="true"
+                                    [paginator]="true"
+                                    [rowHover]="true"
+                                    [rows]="5"
+                                    [rowsPerPageOptions]="[5, 10, 15]"
+                                    class="p-datatable-striped table table-striped">
+                                    <!-- Thanh tìm kiếm -->
+                                    <ng-template pTemplate="caption">
+                                        <div class="search-container input-group mb-3" class="d-flex justify-content-end">
+                                            <button class="btn btn-danger mr-2" (click)="getSearch()">
+                                                <i class="fas fa-minus"></i> Xóa hết </button>
+
+                                            <button class="btn btn-light" (click)="getSearch()">
+                                                <i class="fas fa-file-export"></i> Xuất file </button>
+
+                                            <button class="btn btn-light" (click)="getSearch()">
+                                                <i class="fas fa-file-import"></i> Nhập file </button>
+
+                                            <button class="btn btn-primary mr-2" (click)="getSearch()">
+                                                <i class="fas fa-plus"></i> Tạo mới </button>
+
+                                        </div>
+
+                                        <div class="search-container input-group mb-3">
+                                            <!-- Bộ lọc cột -->
+                                            <p-columnFilter field="status" matchMode="equals" [showMenu]="false" class="opacity-80">
+                                                <ng-template pTemplate="filter" let-value let-filter="filterCallback">
+                                                    <p-dropdown [ngModel]="value" [options]="statuses" (onChange)="getSearchtype($event.value)"
+                                                    placeholder="Document Type" [showClear]="true"
+                                                    >
+                                                        <ng-template let-option pTemplate="item">
+                                                            <p-tag [value]="option.value"></p-tag>
+                                                        </ng-template>
+                                                    </p-dropdown>
+                                                </ng-template>
+                                            </p-columnFilter>
+
+                                            <div class="row g-3 align-items-center">
+                                                <div class="col-auto">
+                                                    <!-- style="background-color: #e6f0ff; #e6ffe6; #ffe6e6; -->
+                                                    <!-- Ô tìm kiếm -->
+                                                    <input class="form-control"  type="text" name="filter" [(ngModel)]="filter"
+                                                    autocomplete="off" placeholder="Search documents..."
+                                                    style="border: 1px solid #99bbff;">
+                                                </div>
+                                                <div class="col-auto">
+                                                    <!-- Ô ngày hợp lệ -->
+                                                    <input class="form-control" type="text" name="validDate" [(ngModel)]="validDate"
+                                                    bsDatepicker placeholder="Validate Date"
+                                                    style="border: 1px solid #99cc99;">
+                                                </div>
+                                                <div class="col-auto">
+                                                    <!-- Ô ngày hết hạn -->
+                                                    <input class="form-control" type="text" name="expireDate" [(ngModel)]="expireDate"
+                                                    bsDatepicker placeholder="Expire Date"
+                                                    style="border: 1px solid #ff9999;">
+                                                </div>
+                                                <div class="col-auto">
+                                                    <button class="btn btn-primary mr-2" (click)="getSearch()">
+                                                        <i class="fas fa-search fa-sm"></i></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </ng-template>
+
+                                    <ng-template pTemplate="header">
+                                        <tr>
+                                            <!-- <th class="text-primary text-opacity-50"></th> -->
+                                            <th pSortableColumn="title" class="text-primary text-opacity-50">Tiêu đề
+                                                <p-sortIcon></p-sortIcon></th>
+                                            <th pSortableColumn="code" class="text-primary text-opacity-50">Số hiệu
+                                                <p-sortIcon></p-sortIcon></th>
+                                            <th pSortableColumn="docType" class="text-primary text-opacity-50">Loại văn bản
+                                                <p-sortIcon></p-sortIcon></th>
+                                            <th pSortableColumn="validated" class="text-primary text-opacity-50">Hiệu lực
+                                                <p-sortIcon></p-sortIcon></th>
+                                            <th pSortableColumn="expired" class="text-primary text-opacity-50">Hết hiệu lực
+                                                <p-sortIcon></p-sortIcon></th>
+                                        </tr>
+                                    </ng-template>
+                                    
+
+                                    <ng-template pTemplate="body" let-document let-i="index">
+                                        <tr>
+                                            <!-- <td>
+                                                <p-tableCheckbox [value]="document" ngInit="checked=true" (onChange)="onCheckboxChange($event.target.checked)"></p-tableCheckbox>
+                                            </td> -->
+                                            <!-- <td>
+                                                <p-tableCheckbox [(ngModel)]="checked" [value]="checked" (onChange)="onCheckboxChange($event.checked)"></p-tableCheckbox>
+                                            </td> -->
+                                            <!-- <td>
+                                                <input type="checkbox" [(ngModel)]="checked" ngInit="checked=false" (change)="onCheckboxChange($event)">
+                                            </td> -->
+                                            <!-- <td>
+                                                <input type="checkbox" [(ngModel)]="checkboxStates[i]" [(ngModel)]="checked" ngInit="checked=false" (change)="onCheckboxChange($event)">
+                                            </td> -->
+                                            <!-- <td>
+                                                <input type="checkbox" [(ngModel)]="checkboxStates[i]" (change)="onCheckboxChange($event.target.checked, i)">
+                                            </td> -->
+
+                                            <td>{{ document.title }}</td>
+                                            <td>{{ document.code }}</td>
+                                            <td>{{ document.docType }}</td>
+                                            <td>{{ document.validation }}</td>
+                                            <td>{{ document.expiration }}</td>
+
+                                            <td>
+                                                <button
+                                                class="btn btn-danger btn-sm pull-right"
+                                                (click)="getSearch()">
+                                                {{ 'X' | localize }}
+                                                </button>
+                                            </td>
+                                        </tr>
+                                    </ng-template>
+                                </p-table>
+                            </tab>
+
+                            <tab class="p-5" heading=" {{ 'Chưa phê duyệt' | localize }}">
+                                <p-table
+                                    [value]="data"
+                                    [showCurrentPageReport]="true"
+                                    [paginator]="true"
+                                    [rowHover]="true"
+                                    [rows]="5"
+                                    [rowsPerPageOptions]="[5, 10, 15]"
+                                    class="p-datatable-striped table table-striped">
+                                    <!-- Thanh tìm kiếm -->
+                                    <ng-template pTemplate="caption">
+                                        <div class="search-container input-group mb-3" class="d-flex justify-content-end">
+
+                                            <button class="btn btn-light" (click)="getSearch()">
+                                                <i class="fas fa-file-export"></i> Xuất file </button>
+
+                                            <button class="btn btn-light" (click)="getSearch()">
+                                                <i class="fas fa-file-import"></i> Nhập file </button>
+
+                                            <button class="btn btn-primary mr-2" (click)="getSearch()" >
+                                                <i class="fas fa-plus"></i> Tạo mới </button>
+
+                                        </div>
+
+                                        <div class="search-container input-group mb-3">
+                                            <!-- Bộ lọc cột -->
+                                            <p-columnFilter field="status" matchMode="equals" [showMenu]="false" class="opacity-80">
+                                                <ng-template pTemplate="filter" let-value let-filter="filterCallback">
+                                                    <p-dropdown [ngModel]="value" [options]="statuses" (onChange)="getSearchtype($event.value)"
+                                                    placeholder="Document Type" [showClear]="true"
+                                                    >
+                                                        <ng-template let-option pTemplate="item">
+                                                            <p-tag [value]="option.value"></p-tag>
+                                                        </ng-template>
+                                                    </p-dropdown>
+                                                </ng-template>
+                                            </p-columnFilter>
+
+                                            <div class="row g-3 align-items-center">
+                                                <div class="col-auto">
+                                                    <!-- style="background-color: #e6f0ff; #e6ffe6; #ffe6e6; -->
+                                                    <!-- Ô tìm kiếm -->
+                                                    <input class="form-control"  type="text" name="filter" [(ngModel)]="filter"
+                                                    autocomplete="off" placeholder="Search documents..."
+                                                    style="border: 1px solid #99bbff;">
+                                                </div>
+                                                <div class="col-auto">
+                                                    <!-- Ô ngày hợp lệ -->
+                                                    <input class="form-control" type="text" name="validDate" [(ngModel)]="validDate"
+                                                    bsDatepicker placeholder="Validate Date"
+                                                    style="border: 1px solid #99cc99;">
+                                                </div>
+                                                <div class="col-auto">
+                                                    <!-- Ô ngày hết hạn -->
+                                                    <input class="form-control" type="text" name="expireDate" [(ngModel)]="expireDate"
+                                                    bsDatepicker placeholder="Expire Date"
+                                                    style="border: 1px solid #ff9999;">
+                                                </div>
+                                                <div class="col-auto">
+                                                    <button class="btn btn-primary mr-2" (click)="getSearch()">
+                                                        <i class="fas fa-search fa-sm"></i></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </ng-template>
+                                </p-table>
+                            </tab>
+                        </tabset>
+                    </div>
+                </div>
+            </div>
