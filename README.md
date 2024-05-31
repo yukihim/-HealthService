@@ -17,3 +17,13 @@ ____________
 | 11.1  | 🚧 &thinsp; In Progress | 2022-01-31 | [Open](https://github.com/aspnetzero/aspnet-zero-core/milestone/93)<br>[Closed](https://github.com/aspnetzero/aspnet-zero-core/milestone/93?closed=1) |
 
 Link of project deployment: ytethongminh.io.vn
+
+## Requirement Specifications & Related Documents
+Link Requirement Specifications Legal Document Management Module:
+https://docs.google.com/document/d/1xRtsTJq9vCFWeKFu--MTZ3w4lOXuDF5Q/edit?usp=sharing&ouid=108657079147369542069&rtpof=true&sd=true
+
+Link Requirement Specifications Healthcare Unit Management Module:
+https://docs.google.com/document/d/1JMVFaEjGKr_2COkzQGrPpn1Yx5ZAArsH/edit?usp=sharing&ouid=108657079147369542069&rtpof=true&sd=true
+
+Link System Architecture Document:
+https://docs.google.com/document/d/1XXXh3IIS9U1f0P3PZLnwxYUQkO63iaSPnCK03YDKnhE/edit?usp=sharing
